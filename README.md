@@ -28,7 +28,7 @@ Faith ✚ Security ✚ Craft ✚ Community
 
 ### Connect
 - 💬 Open to collabs on secure AI & student projects
-- 📫 Reach me: **add your email/LinkedIn here**
+- 📫 Reach me: **emmanuelkasuba2005@gmail.com**
 
 ---
 
