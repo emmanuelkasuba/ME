@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="description" content="Emmanuel Kasuba — Zambian tech founder blending creative strategy with deep technical expertise. Creator of Hot Taks and other community-driven platforms.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Kasuba | Cybersecurity Visionary</title>
@@ -13,10 +12,13 @@
     <!-- Header -->
     <header>
         <div class="container header-container"> 
-        <a href="#" class="logo">
-            Emmanuel<span>Kasuba</span>
-        </a>
+            <a href="#" class="logo">
+                Emmanuel<span>Kasuba</span>
+            </a>
             <nav>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
                 <ul id="navMenu">
                     <li><a href="#identity" class="nav-link">Identity</a></li>
                     <li><a href="#projects" class="nav-link">Ventures</a></li>
@@ -26,10 +28,10 @@
                     <li><a href="#contact" class="nav-link">Contact</a></li>
                     <button class="close-menu"><i class="fas fa-times"></i></button>
                 </ul>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
             </nav>
+            <button id="darkModeToggle" class="dark-mode-toggle">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
     </header>
 
@@ -41,7 +43,7 @@
                 <h1>Emmanuel Kasuba</h1>
                 <p>Building a Zambian tech empire at the intersection of cybersecurity, faith, and human empowerment. Co-founder of PEC.S Technologies creating solutions that heal, educate, and restore.</p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn"> Ides and dev projects</a>
+                    <a href="#projects" class="btn">Ideas and dev projects</a>
                     <a href="#contact" class="btn btn-secondary">HIRE Me</a>
                 </div>
                 
@@ -49,11 +51,9 @@
                     <p>"Infusing God's presence into technology to create platforms that empower, educate, and uplift the next generation of African innovators."</p>
                 </div>
             </div>
-        </div>
-        <div class="hero-image"> <!-- Correct class name -->
+                    <div class="hero-image"> <!-- Correct class name -->
             <img src="IMG_.jpg" alt="Emmanuel Kasuba">
         </div>
-    </div>
             </div>
         </div>
     </section>
@@ -87,9 +87,9 @@
                         <li>Advocate for cyber hygiene and community awareness</li>
                     </ul>
                     <div class="skills-badges">
-                        <span class="skill-badge"><i class="fab fa-python"></i>REACT</span>
+                        <span class="skill-badge"><i class="fab fa-react"></i>REACT</span>
                         <span class="skill-badge"><i class="fas fa-database"></i>Css</span>
-                        <span class="skill-badge"><i class="fab fa-js"></i>REACT-Native</span>
+                        <span class="skill-badge"><i class="fab fa-react"></i>REACT-Native</span>
                         <span class="skill-badge"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
                         <span class="skill-badge"><i class="fas fa-robot"></i>WEB-APP</span>
                         <span class="skill-badge"><i class="fab fa-git-alt"></i> Git</span>
@@ -121,7 +121,7 @@
                             <span class="project-tag project-status">Development Phase</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://shd-demo.com" target="_blank" class="btn">View Demo</a>
+                            <a href="https://shdai-child-health-insights.lovable.app/" target="_blank" class="btn">View Demo</a>
                         </div>
                     </div>
                 </div>
@@ -147,7 +147,7 @@
                 
                 <div class="project-card" id="genesisCard">
                     <div class="project-img genesis">
-                        <i class="fas fa-shield-alt"></i>
+                        <i class="fas fa-shield"></i>
                     </div>
                     <div class="project-content">
                         <h3>Genesis Secure AI</h3>
@@ -156,7 +156,7 @@
                             <span class="project-tag">AI</span>
                             <span class="project-tag">Cybersecurity</span>
                             <span class="project-tag">Education</span>
-                            <span class="project-tag project-status">Concept Phase</span>
+                            <span class="project-tag project-status">Concept Phase !</span>
                         </div>
                         <div class="project-links">
                             <a href="#" target="_blank" class="btn">coming soon</a>
@@ -222,9 +222,9 @@
                     <h3>Key Initiatives</h3>
                     <div class="initiatives">
                         <div class="initiative">
-                            <i class="fas fa-truck-fast"></i>
-                            <h4>Rush Link</h4>
-                            <p>Delivery service concept designed to make ordering and receiving items faster and more convenient across Zambia.</p>
+                            <i class="fas fa-heartbeat"></i>
+                            <h4>SHD AI</h4>
+                            <p>An AI system that helps reduce child mortility using Artifical inteligence abilities.</p>
                         </div>
                         <div class="initiative">
                             <i class="fas fa-newspaper"></i>
@@ -284,6 +284,28 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- New Testimonial -->
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="person">
+                            <h3>Chiyamiko Chibwana</h3>
+                            <p>Co-Founder, PEC.S Technologies</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-content">
+                        <p>"It is with great honor that I recommend my close friend and co-founder, Emmanuel Kasuba, a brilliant AI and Cybersecurity Specialist and one of the finest minds I have ever had the privilege to work alongside."</p>
+                        <p>"At PEC.S Technologies, Emmanuel has been more than a co-founder—he has been a true visionary partner. His ability to blend deep technical expertise with strategic foresight continues to set the foundation for the prestigious company we are building."</p>
+                        <p>"From Smart Health Diagnostics, a pioneering project aimed at reducing child mortality through AI-powered health solutions, to innovative concepts like Genesis Secure AI and Hair Do, Emmanuel is constantly at the forefront of shaping ideas that bridge innovation with real-world impact."</p>
+                        <p>"What inspires me most is that Emmanuel's Christian faith is not separate from his work—it is the very heartbeat of his vision. He builds with conviction, weaving values of integrity, redemption, and service into every project he touches."</p>
+                        <p>"In short, Emmanuel Kasuba is a world-class AI and cybersecurity leader. I wholeheartedly recommend him to any organization, partner, or investor seeking a sharp mind, a faithful heart, and a visionary capable of delivering lasting impact."</p>
+                        <div class="contact-info">
+                            <i class="fas fa-phone"></i> +260 979 470 836
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -315,7 +337,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Contact Section (Form Removed) -->
     <section id="contact">
         <div class="container">
             <div class="section-title">
@@ -323,7 +345,7 @@
             </div>
             
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info-section">
                     <h3>Connect With Me</h3>
                     <div class="contact-item">
                         <i class="fas fa-envelope"></i>
@@ -362,25 +384,6 @@
                         </a>
                     </div>
                 </div>
-                
-                <div class="contact-form">
-                    <h3>Send a Message</h3>
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <label for="name">Name</label>
-                            <input type="text" id="name" placeholder="Your name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email</label>
-                            <input type="email" id="email" placeholder="Your email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea id="message" placeholder="Your message" required></textarea>
-                        </div>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
             </div>
         </div>
     </section>
@@ -407,6 +410,9 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+        <script src="script.js"></script>
 </body>
 </html>
