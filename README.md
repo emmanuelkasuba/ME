@@ -1,35 +1,55 @@
+# Emmanuel Kasuba — Cybersecurity & Web Application Security Developer
 
-# Emmanuel Kasuba — Cybersecurity & AI Builder
-
-Hi, I’m Emmanuel 🇿🇲 — a cybersecurity student at **Zambia University College of Technology (ZUT)**.  
-I’m learning by building: **Genesis Secure AI** (auth & threat defense), **Hot-Taks** (news and gossip), **Hair Do** (hairstyle bookings), **RushLink** (logistics), and **PEC.S** (founders collective).
-
-- 🔐 **Focus:** security engineering, authentication, threat hunting, safe AI
-- 🧪 **Current stack:** C/C++ (school), Python, SQL; exploring Rust & Go
-- 🏗️ **Now building:** SHD AI secure data pipeline + Hair Do web app (Lusaka niche)
-- 🎯 **Goal:** ship real products that protect & uplift communities
-
-### Tech I use/learn
-`C++` `Python` `SQL` `Rust` `Go` `Linux` `Git` `OWASP` `Docker (learning)`
-
-### Projects
-- **Genesis Secure AI** — behavioral auth, biometric verification, predictive threat detection  
-- **Hot-Taks** — a wep add to alow students to share gossip and real school news 
-- **Hair Do** — web app for booking hairstyles in Lusaka; FYP + reviews + business pages  
-- **RushLink** — hybrid delivery (WhatsApp coordination + hubs)  
-- **PEC.S** — building together with friends
-
-### Learning log
-- 📚 Semester 2: Data Comms & Networks, C++ programming, Fundamentals of Data Security  
-- 🔭 Next up: Linux hardening, basic SOC workflows, Rust for systems, Go for services
-
-### Values
-Faith ✚ Security ✚ Craft ✚ Community
-
-### Connect
-- 💬 Open to collabs on secure AI & student projects
-- 📫 Reach me: **emmanuelkasuba2005@gmail.com**
+Hi, I’m Emmanuel 🇿🇲 — a cybersecurity student at the **Zambia University College of Technology (ZUT)**.
+I specialize in **cybersecurity and web application security**, while also building full-stack projects with **React** and modern web tools. My work combines secure design, threat defense, and user-focused development.
 
 ---
 
-> “Secure tech that actually serves people.”  
+## 🔐 Expertise
+
+* Cybersecurity & authentication systems
+* Web application security (OWASP practices, secure coding)
+* React-based web development
+* Threat hunting & defensive automation
+
+---
+
+## 🧪 Tech Stack
+
+`C++` · `Python` · `SQL` · `JavaScript/React` · Exploring `Rust` & `Go`
+Linux · Git · Docker (learning) · Web Security Testing Tools
+
+---
+
+## 🏗️ Projects
+
+* **Genesis Secure AI** — AI-powered authentication, biometrics, and predictive threat defense
+* **SHD AI** — secure health diagnostics pipeline integrating wearables & hospital data
+* **Hair Do** — React web app for hairstyle bookings in Lusaka (FYP, reviews, business pages)
+* **RushLink** — delivery & logistics platform (hybrid WhatsApp + hubs model)
+* **Hot-Taks** — student-focused web app for school news and gossip
+* **PEC.S** — co-founder collective building Zambian startups
+
+---
+
+## 📚 Learning Journey
+
+* **Semester 2 coursework:** Data Comms & Networks · C++ Programming · Fundamentals of Data Security
+* **Next up:** Web application pentesting, Linux hardening, SOC workflows, Rust & Go for backend security
+
+---
+
+## ✚ Core Values
+
+Faith · Security · Craft · Community
+
+---
+
+## 📫 Connect
+
+* 💬 Open to collaborations in **secure AI**, **React web apps**, and **web application security**
+* 📧 Email: **[emmanuelkasuba2005@gmail.com](mailto:emmanuelkasuba2005@gmail.com)**
+
+---
+
+> “Secure tech that actually serves people.”
