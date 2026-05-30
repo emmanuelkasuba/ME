@@ -4,194 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact | Emmanuel Kasuba</title>
+    <meta name="description" content="Contact Emmanuel Kasuba for collaborations in secure AI and web security.">
+    <meta name="theme-color" content="#c0c0c0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        .email-option {
-            text-align: center;
-            padding: 30px;
-            border-radius: 12px;
-            background: var(--bg-card);
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-        }
-        
-        .email-option:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-        }
-        
-        .email-icon {
-            font-size: 3rem;
-            color: var(--accent);
-            margin-bottom: 20px;
-        }
-        
-        .email-option h3 {
-            margin-bottom: 15px;
-            color: var(--text-primary);
-        }
-        
-        .email-option p {
-            margin-bottom: 25px;
-            color: var(--text-secondary);
-        }
-        
-        .btn-gmail {
-            background: #DB4437;
-            color: white;
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-        }
-        
-        .btn-gmail:hover {
-            background: #c13a2e;
-            transform: translateY(-2px);
-        }
-        
-        .divider {
-            display: flex;
-            align-items: center;
-            margin: 30px 0;
-            color: var(--text-secondary);
-        }
-        
-        .divider::before,
-        .divider::after {
-            content: '';
-            flex: 1;
-            height: 1px;
-            background: var(--border-color);
-        }
-        
-        .divider span {
-            padding: 0 15px;
-        }
-    </style>
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
+<body data-page="contact">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+    <header id="site-header">
+        <div class="header-container container">
             <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
+                <img src="assets/favicon-48.png" alt="Emmanuel Kasuba" width="32" height="32">
                 EmmanuelKasuba
             </a>
             <nav>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
+                <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
                 <ul id="navMenu">
-                    <li><a href="identity.html">Identity</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="journey.html">Journey</a></li>
-                    <li><a href="contact.html" class="active">Contact</a></li>
-                     <li><a href = "https://volante-2be24.web.app/">Volante'</a></li>
-                    <button class="close-menu"><i class="fas fa-times"></i></button>
+                    <li><a href="identity.html" data-nav="identity">Identity</a></li>
+                    <li><a href="journey.html" data-nav="journey">Journey</a></li>
+                    <li><a href="my-essays.html" data-nav="thoughts">Thoughts</a></li>
+                    <li><a href="testimonials.html" data-nav="testimonials">Testimonials</a></li>
+                    <li><a href="contact.html" data-nav="contact">Contact</a></li>
+                    <li><a href="https://zut-a.vercel.app" class="nav-external" target="_blank" rel="noopener noreferrer">ZUT A+</a></li>
+                    <li><a href="https://volante-2be24.web.app/" class="nav-external" target="_blank" rel="noopener noreferrer">Volante'</a></li>
+                    <li><button class="close-menu" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button></li>
                 </ul>
             </nav>
-            <button id="darkModeToggle" class="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
         </div>
     </header>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Get In Touch</h2>
-                <p>Let's connect and discuss how we can work together</p>
+    <main id="main">
+    <section class="hero">
+        <div class="hero-inner">
+            <p class="tagline">Emmanuel Kasuba</p>
+            <h1>Contact</h1>
+            <p class="lead">Collaborations in secure AI, React web apps, and web application security.</p>
+        </div>
+    </section>
+
+    <section class="section-full">
+        <div class="text-columns reveal">
+            <div class="contact-lines">
+                <h3>Email</h3>
+                <p><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">emmanuelkasuba2005@gmail.com</a></p>
+                <h3>Phone</h3>
+                <p>+260 972 354 969</p>
+                <p>+260 764 614 356</p>
+                <h3>Location</h3>
+                <p>Zambia University College of Technology</p>
             </div>
-            
-            <div class="grid grid-2">
-                <div class="card">
-                    <h3>Contact Information</h3>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>emmanuelkasuba2005@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>Phone</h4>
-                            <p>+260 972 354 969</p>
-                            <p>+260 764 614 356</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>Location</h4>
-                            <p>Zambia University College of Technology</p>
-                        </div>
-                    </div>
-                    <div class="social-links" style="margin-top: 30px;">
-                        <a href="https://github.com/emmanuelkasuba" target="_blank"><i class="fab fa-github"></i></a>
-                        <a href="https://x.com/emmanuelka71332" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                        <a href="https://www.linkedin.com/in/emmanuel-kasuba-706949353" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://www.instagram.com/b.ig.e_/" target="_blank"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="email-option">
-                        <div class="email-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <h3>Send Email</h3>
-                        <p>Click below to send me an email directly from your email client</p>
-                        <a href="mailto:emmanuelkasuba2005@gmail.com" class="btn">
-                            <i class="fas fa-paper-plane"></i> Send Email
-                        </a>
-                    </div>
-                    
-                    <div class="divider">
-                        <span>OR</span>
-                    </div>
-                    
-                    <div class="email-option">
-                        <div class="email-icon">
-                            <i class="fab fa-google"></i>
-                        </div>
-                        <h3>Login to Gmail</h3>
-                        <p>If you use Gmail, you can login and compose an email directly</p>
-                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelkasuba2005@gmail.com" 
-                           target="_blank" class="btn btn-gmail">
-                            <i class="fab fa-google"></i> Open Gmail
-                        </a>
-                    </div>
-                </div>
+            <div class="contact-lines">
+                <h3>Reach out</h3>
+                <p><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">Send email</a></p>
+                <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelkasuba2005@gmail.com" target="_blank" rel="noopener" class="text-link">Open in Gmail</a></p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
-                EmmanuelKasuba
-            </a>
-            <p>Cybersecurity Visionary | Tech Entrepreneur | Faith-Driven Creator</p>
-            <div class="social-links">
-                <a href="https://github.com/emmanuelkasuba" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/emmanuelka71332" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/emmanuel-kasuba-706949353" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/b.ig.e_/" target="_blank"><i class="fab fa-instagram"></i></a>
-            </div>
-            <div class="copyright">
-                "Building platforms that empower youth through technology grounded in faith and purpose."<br>
-                © 2025 Emmanuel Kasuba. All rights reserved.
-            </div>
+    <section class="section-band">
+        <div class="section-intro section-intro--center reveal">
+            <h2>Collaboration</h2>
+            <p class="subtitle">Open to secure AI, React apps, and web security work.</p>
         </div>
-    </footer>
-    
+        <p class="section-cta reveal"><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">Email me</a></p>
+    </section>
+
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <script src="site.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
