@@ -41,54 +41,67 @@ function setActiveFooterLinks() {
     });
 }
 
-setActiveNav();
+let mobileMenuReady = false;
+
+function initMobileMenu() {
+    if (mobileMenuReady) return;
+
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const navMenu = document.querySelector('nav ul');
+    const closeMenu = document.querySelector('.close-menu');
+    const navBackdrop = document.getElementById('navBackdrop');
+    const navLinks = document.querySelectorAll('nav a');
+
+    if (!navMenu || !mobileMenuBtn) return;
+
+    function setMenuOpen(open) {
+        navMenu.classList.toggle('show-menu', open);
+        navBackdrop?.classList.toggle('is-visible', open);
+        document.body.style.overflow = open ? 'hidden' : '';
+        mobileMenuBtn?.setAttribute('aria-expanded', open ? 'true' : 'false');
+    }
+
+    mobileMenuBtn?.addEventListener('click', () => {
+        setMenuOpen(!navMenu.classList.contains('show-menu'));
+    });
+
+    closeMenu?.addEventListener('click', () => setMenuOpen(false));
+    navBackdrop?.addEventListener('click', () => setMenuOpen(false));
+
+    navLinks.forEach((link) => {
+        link.addEventListener('click', () => setMenuOpen(false));
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && navMenu.classList.contains('show-menu')) {
+            setMenuOpen(false);
+        }
+    });
+
+    mobileMenuReady = true;
+}
+
+function initSiteChrome() {
+    setActiveNav();
+    initMobileMenu();
+
+    const siteFooter = document.getElementById('site-footer');
+    if (siteFooter) setActiveFooterLinks();
+}
+
+window.initSiteChrome = initSiteChrome;
 
 const footerObserver = new MutationObserver(() => {
     setActiveFooterLinks();
 });
-const siteFooter = document.getElementById('site-footer');
-if (siteFooter) {
-    footerObserver.observe(siteFooter, { childList: true, subtree: true });
-    setActiveFooterLinks();
+const siteFooterEl = document.getElementById('site-footer');
+if (siteFooterEl) {
+    footerObserver.observe(siteFooterEl, { childList: true, subtree: true });
 }
 
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-const navMenu = document.querySelector('nav ul');
-const closeMenu = document.querySelector('.close-menu');
-const navBackdrop = document.getElementById('navBackdrop');
+initSiteChrome();
+
 const siteHeader = document.getElementById('site-header');
-const navLinks = document.querySelectorAll('nav a');
-
-function setMenuOpen(open) {
-    if (!navMenu) return;
-    navMenu.classList.toggle('show-menu', open);
-    navBackdrop?.classList.toggle('is-visible', open);
-    document.body.style.overflow = open ? 'hidden' : '';
-    mobileMenuBtn?.setAttribute('aria-expanded', open ? 'true' : 'false');
-}
-
-if (mobileMenuBtn && navMenu) {
-    mobileMenuBtn.addEventListener('click', () => {
-        setMenuOpen(!navMenu.classList.contains('show-menu'));
-    });
-}
-
-if (closeMenu) {
-    closeMenu.addEventListener('click', () => setMenuOpen(false));
-}
-
-navBackdrop?.addEventListener('click', () => setMenuOpen(false));
-
-navLinks.forEach((link) => {
-    link.addEventListener('click', () => setMenuOpen(false));
-});
-
-document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && navMenu?.classList.contains('show-menu')) {
-        setMenuOpen(false);
-    }
-});
-
 window.addEventListener('scroll', () => {
     if (!siteHeader) return;
     siteHeader.classList.toggle('header--scrolled', window.scrollY > 8);

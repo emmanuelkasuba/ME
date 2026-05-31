@@ -25,7 +25,7 @@ Silver/black, Oswald, full-width sections, text-only heroes. Favicons from `IMG_
 | 4 | **Expertise band** | — | Cybersecurity, web security, React, threat hunting |
 | 5 | **Tech stack** | — | C++, Python, SQL, JS, React, etc. |
 | 6 | **Journey** | `#journey` | Short-term / long-term vision |
-| 7 | **Learning band** | — | ZUT Semester 2 courses, ZUT A+ link |
+| 7 | **Learning band** | — | ZUT Semester 1 2026: BIT 2261, SEC 2201, SEC 2210, SEC 2230; ZUT A+ link |
 | 8 | **Milestones** | — | MVPs, pilots, funding, core team |
 | 9 | **Values band** | — | Faith · Security · Craft · Community |
 | 10 | **Ventures** | — | ZUT A+ Club, Smart Health Digital AI, Volante' (live links only) |

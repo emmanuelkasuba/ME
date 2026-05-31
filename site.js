@@ -1,9 +1,71 @@
 (function () {
     const year = new Date().getFullYear();
-    const footer = document.getElementById('site-footer');
-    if (!footer) return;
 
-    footer.innerHTML = `
+    if (!document.querySelector('link[href*="font-awesome"]')) {
+        const fa = document.createElement('link');
+        fa.rel = 'stylesheet';
+        fa.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css';
+        document.head.appendChild(fa);
+    }
+
+    const SOCIAL_LINKS = [
+        { href: 'https://bsky.app/profile/emmanuelkasuba.bsky.social', label: 'Bluesky', icon: 'fa-brands fa-bluesky' },
+        { href: 'https://x.com/emmanuelka71332', label: 'X', icon: 'fa-brands fa-x-twitter' },
+        { href: 'https://www.linkedin.com/in/emmanuel-kasuba-706949353', label: 'LinkedIn', icon: 'fa-brands fa-linkedin-in' },
+        { href: 'https://www.instagram.com/unoffically_b.i.geeee/', label: 'Instagram', icon: 'fa-brands fa-instagram' },
+        { href: 'https://pin.it/hN1DoKaCJ', label: 'Pinterest', icon: 'fa-brands fa-pinterest' },
+        { href: 'https://substack.com/@emmanuelkasuba', label: 'Substack', icon: 'fa-brands fa-substack' },
+        { href: 'https://github.com/emmanuelkasuba', label: 'GitHub', icon: 'fa-brands fa-github' },
+    ];
+
+    const NAV_LINKS = [
+        { href: 'index.html#identity', label: 'About', dataNav: 'home' },
+        { href: 'my-essays.html', label: 'Thoughts', dataNav: 'thoughts' },
+        { href: 'testimonials.html', label: 'Testimonials', dataNav: 'testimonials' },
+        { href: 'index.html#contact', label: 'Contact', dataNav: 'home' },
+        { href: 'https://zut-a.vercel.app', label: 'ZUT A+', external: true },
+        { href: 'https://smart-digital-care-13.vercel.app', label: 'SHD AI', external: true },
+        { href: 'https://volante-2be24.web.app/', label: "Volante'", external: true },
+    ];
+
+    function renderHeroSocial() {
+        const mount = document.getElementById('hero-social-mount');
+        if (!mount) return;
+
+        mount.innerHTML = SOCIAL_LINKS.map(
+            (s) =>
+                `<a href="${s.href}" target="_blank" rel="noopener noreferrer" aria-label="${s.label}"><i class="${s.icon}" aria-hidden="true"></i></a>`
+        ).join('');
+    }
+
+    function renderSiteNav() {
+        const mount = document.getElementById('site-nav-mount');
+        if (!mount) return;
+
+        const items = NAV_LINKS.map((link) => {
+            const external = link.external
+                ? ' class="nav-external" target="_blank" rel="noopener noreferrer"'
+                : '';
+            const dataNav = link.dataNav ? ` data-nav="${link.dataNav}"` : '';
+            return `<li><a href="${link.href}"${dataNav}${external}>${link.label}</a></li>`;
+        }).join('');
+
+        mount.innerHTML = `
+            <nav aria-label="Main">
+                <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
+                <ul id="navMenu">
+                    ${items}
+                    <li><button class="close-menu" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button></li>
+                </ul>
+            </nav>
+        `;
+    }
+
+    function renderFooter() {
+        const footer = document.getElementById('site-footer');
+        if (!footer) return;
+
+        footer.innerHTML = `
         <div class="footer-grid">
             <div class="footer-col footer-brand">
                 <a href="index.html" class="logo footer-logo">
@@ -41,10 +103,10 @@
                     <li>Open to secure AI, React apps &amp; web security work</li>
                 </ul>
                 <div class="social-links footer-social">
-                    <a href="https://github.com/emmanuelkasuba" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                    <a href="https://x.com/emmanuelka71332" target="_blank" rel="noopener" aria-label="X"><i class="fab fa-x-twitter"></i></a>
-                    <a href="https://www.linkedin.com/in/emmanuel-kasuba-706949353" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.instagram.com/b.ig.e_/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    ${SOCIAL_LINKS.map(
+                        (s) =>
+                            `<a href="${s.href}" target="_blank" rel="noopener noreferrer" aria-label="${s.label}"><i class="${s.icon}" aria-hidden="true"></i></a>`
+                    ).join('')}
                 </div>
             </div>
         </div>
@@ -53,4 +115,13 @@
             <p class="footer-copy">© ${year} Emmanuel Kasuba. All rights reserved.</p>
         </div>
     `;
+    }
+
+    renderSiteNav();
+    renderHeroSocial();
+    renderFooter();
+
+    if (typeof window.initSiteChrome === 'function') {
+        window.initSiteChrome();
+    }
 })();

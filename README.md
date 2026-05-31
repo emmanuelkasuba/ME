@@ -20,9 +20,9 @@ This repository is my **minimalist portfolio website**: silver & black, typograp
 
 `identity.html`, `journey.html`, and `contact.html` redirect to `index.html#identity`, `#journey`, and `#contact`.
 
-Shared: `styles.css` · `script.js` · `site.js` (footer) · `assets/` (favicons) · `IMG_.jpg` (favicon source only).
+Shared: `styles.css` · `mobile.css` · `script.js` · `site.js` (nav + footer) · `assets/` · `IMG_.jpg` (favicon source).
 
-Docs: [`SITE-PLAN.md`](SITE-PLAN.md) · [`UX-REVIEW.md`](UX-REVIEW.md)
+Docs: [`AGENTS.md`](AGENTS.md) (for AI agents) · [`SITE-PLAN.md`](SITE-PLAN.md) · [`UX-REVIEW.md`](UX-REVIEW.md)
 
 ---
 
@@ -191,6 +191,17 @@ Defined in `styles.css` `:root`:
 
 ---
 
+## Learning (ZUT — Semester 1, 2026)
+
+| Course | Code |
+|--------|------|
+| Database Systems | BIT 2261 |
+| Biometrics 1 | SEC 2201 |
+| Cryptography | SEC 2210 |
+| Forensic Tools & Techniques | SEC 2230 |
+
+---
+
 ## Projects & ventures
 
 - **[ZUT A+ Club](https://zut-a.vercel.app)** — AI & programming at ZUT
@@ -202,10 +213,13 @@ Defined in `styles.css` `:root`:
 ## Connect
 
 - **Email:** [emmanuelkasuba2005@gmail.com](mailto:emmanuelkasuba2005@gmail.com)
-- **GitHub:** [emmanuelkasuba](https://github.com/emmanuelkasuba)
+- **Bluesky:** [@emmanuelkasuba.bsky.social](https://bsky.app/profile/emmanuelkasuba.bsky.social)
 - **X:** [@emmanuelka71332](https://x.com/emmanuelka71332)
 - **LinkedIn:** [emmanuel-kasuba](https://www.linkedin.com/in/emmanuel-kasuba-706949353)
-- **Instagram:** [@b.ig.e_](https://www.instagram.com/b.ig.e_/)
+- **Instagram:** [@unoffically_b.i.geeee](https://www.instagram.com/unoffically_b.i.geeee/)
+- **Pinterest:** [pin.it/hN1DoKaCJ](https://pin.it/hN1DoKaCJ)
+- **Substack:** [@emmanuelkasuba](https://substack.com/@emmanuelkasuba)
+- **GitHub:** [emmanuelkasuba](https://github.com/emmanuelkasuba)
 
 ---
 

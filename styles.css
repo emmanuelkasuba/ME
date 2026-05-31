@@ -264,9 +264,49 @@ nav a.nav-external {
 
 /* Home only — large name */
 .hero--home {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
     min-height: 100svh;
-    align-items: flex-end;
     padding-bottom: clamp(48px, 8vh, 80px);
+}
+
+.hero-social {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.85rem 1.35rem;
+    width: 100%;
+    max-width: var(--max-wide);
+    margin-bottom: 1.5rem;
+}
+
+.hero-social a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    min-height: 44px;
+    color: var(--black);
+    font-size: 1.2rem;
+    text-decoration: none;
+    opacity: 0.5;
+    transition: opacity var(--ease), transform var(--ease);
+}
+
+.hero-social a:hover {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+.hero-social a:focus-visible {
+    opacity: 1;
+    outline: 2px solid var(--black);
+    outline-offset: 3px;
+}
+
+.hero--home .hero-inner {
+    margin-top: auto;
 }
 
 .hero--home h1 {
@@ -471,6 +511,15 @@ nav a.nav-external {
     line-height: 1.7;
 }
 
+.section-band .text-list > li {
+    border-bottom-color: var(--line-on-dark);
+}
+
+.section-band .text-list p {
+    color: var(--silver);
+    opacity: 0.88;
+}
+
 .section-band .section-cta {
     margin-top: clamp(2.5rem, 5vw, 3.5rem);
 }
@@ -504,6 +553,13 @@ nav a.nav-external {
     margin-bottom: 0.75rem;
 }
 
+.prose-snippet {
+    font-weight: 300;
+    line-height: 1.72;
+    max-width: var(--max-read);
+    margin-bottom: 0;
+}
+
 .text-block ul {
     margin-left: 1.25rem;
     margin-top: 0.5rem;
@@ -534,6 +590,25 @@ nav a.nav-external {
     letter-spacing: 0.08em;
     text-transform: uppercase;
     margin-bottom: 0.5rem;
+}
+
+.course-code {
+    display: inline-block;
+    font-size: 0.75em;
+    font-weight: 400;
+    letter-spacing: 0.14em;
+    color: var(--muted);
+    text-transform: uppercase;
+    margin-left: 0.35rem;
+}
+
+.section-band .course-code {
+    color: var(--muted-on-dark);
+}
+
+.text-list--courses h3 {
+    text-transform: none;
+    letter-spacing: 0.04em;
 }
 
 .text-list p {
@@ -1210,7 +1285,7 @@ nav a.nav-external {
     .hero--home {
         min-height: 100svh;
         padding-bottom: 3rem;
-        align-items: flex-end;
+        align-items: flex-start;
     }
 
     .hero--home h1 {

@@ -1,0 +1,126 @@
+/* Mobile-first reading view — defaults for small screens, enhanced on desktop in styles.css */
+
+:root {
+    --mobile-body: clamp(1.0625rem, 1rem + 0.35vw, 1.125rem);
+    --mobile-lead: clamp(1.15rem, 1.05rem + 0.5vw, 1.25rem);
+    --mobile-section-pad: clamp(56px, 12vw, 80px);
+}
+
+body {
+    font-size: var(--mobile-body);
+    line-height: 1.72;
+}
+
+.text-columns {
+    grid-template-columns: 1fr;
+    gap: clamp(2rem, 6vw, 2.75rem);
+}
+
+.text-block h3 {
+    margin-bottom: 0.75rem;
+}
+
+.prose-snippet,
+.text-block .prose-snippet {
+    font-weight: 300;
+    font-size: var(--mobile-body);
+    line-height: 1.72;
+    max-width: 38em;
+    margin-bottom: 0;
+}
+
+.prose .prose-snippet + .prose-snippet {
+    margin-top: 1rem;
+}
+
+.prose-stacked p {
+    font-weight: 300;
+    font-size: var(--mobile-body);
+    line-height: 1.72;
+    max-width: 38em;
+    margin-bottom: 1rem;
+}
+
+.prose-stacked p:last-child {
+    margin-bottom: 0;
+}
+
+.hero .lead {
+    font-size: var(--mobile-lead);
+    line-height: 1.65;
+}
+
+.hero-social {
+    gap: 0.5rem 1.1rem;
+    margin-bottom: 1.25rem;
+}
+
+.hero-social a {
+    font-size: 1.1rem;
+    min-width: 40px;
+    min-height: 40px;
+}
+
+.hero--home .hero-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+
+.section-full,
+.section-band {
+    padding-top: var(--mobile-section-pad);
+    padding-bottom: var(--mobile-section-pad);
+}
+
+.text-list > li {
+    padding: 1.85rem 0;
+}
+
+.text-list h3 {
+    font-size: 1rem;
+    margin-bottom: 0.65rem;
+}
+
+.text-list p {
+    font-size: var(--mobile-body);
+    line-height: 1.68;
+    max-width: 38em;
+}
+
+.quote-item blockquote {
+    font-size: var(--mobile-lead);
+    line-height: 1.7;
+}
+
+.contact-lines p {
+    font-size: var(--mobile-body);
+}
+
+.content-entry article {
+    grid-template-columns: 1fr;
+    gap: 0.65rem;
+}
+
+@media (min-width: 769px) {
+    body {
+        font-size: inherit;
+        line-height: inherit;
+    }
+
+    .text-columns {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: clamp(40px, 6vw, 80px);
+    }
+
+    .hero--home .hero-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem 2.5rem;
+    }
+
+    .content-entry article {
+        grid-template-columns: minmax(8.5rem, 11rem) 1fr;
+        gap: clamp(24px, 3vw, 48px);
+    }
+}

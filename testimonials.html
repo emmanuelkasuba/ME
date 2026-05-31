@@ -13,10 +13,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
     <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body data-page="testimonials">
     <a class="skip-link" href="#main">Skip to content</a>
@@ -27,18 +28,7 @@
                 <img src="assets/favicon-48.png" alt="Emmanuel Kasuba" width="32" height="32">
                 EmmanuelKasuba
             </a>
-            <nav aria-label="Main">
-                <button class="mobile-menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu"><i class="fas fa-bars"></i></button>
-                <ul id="navMenu">
-                    <li><a href="index.html#identity" data-nav="home">About</a></li>
-                    <li><a href="my-essays.html" data-nav="thoughts">Thoughts</a></li>
-                    <li><a href="testimonials.html" data-nav="testimonials">Testimonials</a></li>
-                    <li><a href="index.html#contact" data-nav="home">Contact</a></li>
-                    <li><a href="https://zut-a.vercel.app" class="nav-external" target="_blank" rel="noopener noreferrer">ZUT A+</a></li>
-                    <li><a href="https://volante-2be24.web.app/" class="nav-external" target="_blank" rel="noopener noreferrer">Volante'</a></li>
-                    <li><button class="close-menu" type="button" aria-label="Close menu"><i class="fas fa-times"></i></button></li>
-                </ul>
-            </nav>
+            <div id="site-nav-mount"></div>
         </div>
     </header>
 
