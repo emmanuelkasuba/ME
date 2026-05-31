@@ -18,25 +18,19 @@
                 <h4 class="footer-heading">Pages</h4>
                 <ul class="footer-links" role="list">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="identity.html">Identity</a></li>
-                    <li><a href="journey.html">Journey</a></li>
+                    <li><a href="index.html#identity">Identity</a></li>
+                    <li><a href="index.html#journey">Journey</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
                     <li><a href="my-essays.html">Thoughts</a></li>
                     <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="https://zut-a.vercel.app" target="_blank" rel="noopener">ZUT A+ Club</a></li>
-                    <li><a href="https://volante-2be24.web.app/" target="_blank" rel="noopener">Volante'</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4 class="footer-heading">Projects</h4>
                 <ul class="footer-links">
-                    <li><a href="https://zut-a.vercel.app" target="_blank" rel="noopener">ZUT A+ Club</a></li>
-                    <li>Genesis Secure AI</li>
-                    <li>SHD AI</li>
-                    <li>Hair Do</li>
-                    <li>RushLink</li>
-                    <li>Hot-Taks</li>
-                    <li><a href="https://volante-2be24.web.app/" target="_blank" rel="noopener">Volante'</a></li>
+                    <li><a href="https://zut-a.vercel.app" target="_blank" rel="noopener noreferrer">ZUT A+ Club</a></li>
+                    <li><a href="https://smart-digital-care-13.vercel.app" target="_blank" rel="noopener noreferrer">Smart Health Digital AI</a></li>
+                    <li><a href="https://volante-2be24.web.app/" target="_blank" rel="noopener noreferrer">Volante'</a></li>
                 </ul>
             </div>
             <div class="footer-col">

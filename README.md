@@ -14,12 +14,11 @@ This repository is my **minimalist portfolio website**: silver & black, typograp
 
 | Page | File | Purpose |
 |------|------|---------|
-| Home | `index.html` | Large left-aligned name hero, identity preview, ventures, testimonial previews |
-| Identity | `identity.html` | Spiritual + technical pillars, expertise, tech stack |
-| Journey | `journey.html` | Short/long vision, ZUT coursework, milestones |
+| Home | `index.html` | Hero, identity, journey, ventures, testimonials, contact (single page) |
 | Thoughts | `my-essays.html` | Essay index → `essay-*.html` in **reading mode** |
 | Testimonials | `testimonials.html` | Testimonial index → `testimonial-*.html` in **reading mode** |
-| Contact | `contact.html` | Email, phone, ZUT, collaboration |
+
+`identity.html`, `journey.html`, and `contact.html` redirect to `index.html#identity`, `#journey`, and `#contact`.
 
 Shared: `styles.css` · `script.js` · `site.js` (footer) · `assets/` (favicons) · `IMG_.jpg` (favicon source only).
 
@@ -114,7 +113,7 @@ In `my-essays.html`, add a new `<li class="content-entry">` inside `<ol class="c
 ```
 
 - Use `content-entry--featured` on the newest post if you want it emphasized.
-- Use `content-entry--draft` for work in progress (no link; shows “Draft in progress”).
+- Only list essays that have a published `essay-*.html` page.
 
 ### 3. Optional: home preview
 
@@ -194,8 +193,9 @@ Defined in `styles.css` `:root`:
 
 ## Projects & ventures
 
-- **ZUT A+ Club** — [zut-a.vercel.app](https://zut-a.vercel.app)
-- **Genesis Secure AI** · **SHD AI** · **Hair Do** · **RushLink** · **Hot-Taks** · **Volante'** — [volante-2be24.web.app](https://volante-2be24.web.app/)
+- **[ZUT A+ Club](https://zut-a.vercel.app)** — AI & programming at ZUT
+- **[Smart Health Digital AI](https://smart-digital-care-13.vercel.app)** — digital hospital assistant (IMCI, diagnostics, voice AI)
+- **[Volante'](https://volante-2be24.web.app/)** — community through technology
 
 ---
 
@@ -225,10 +225,12 @@ Or open `index.html` directly (footer still loads via `site.js`).
 
 ```
 ME/
-├── index.html
-├── identity.html
-├── journey.html
+├── index.html              # identity, journey, contact (sections + anchors)
+├── identity.html           # → redirect to index.html#identity
+├── journey.html            # → redirect to index.html#journey
+├── contact.html            # → redirect to index.html#contact
 ├── my-essays.html
+├── essay-zambias-human-compute.html
 ├── essay-security-first-product-design.html   # template for new essays
 ├── testimonials.html
 ├── testimonial-patrick-mulenga.html           # template for new testimonials
