@@ -4,127 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonials | Emmanuel Kasuba</title>
+    <meta name="description" content="Testimonials from colleagues and partners.">
+    <meta name="theme-color" content="#c0c0c0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
+<body data-page="testimonials">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+    <header id="site-header">
+        <div class="header-container container">
             <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
+                <img src="assets/favicon-48.png" alt="Emmanuel Kasuba" width="32" height="32">
                 EmmanuelKasuba
             </a>
-            <nav>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul id="navMenu">
-                    <li><a href="identity.html">Identity</a></li>
-                    <li><a href="testimonials.html" class="active">Testimonials</a></li>
-                    <li><a href="journey.html">Journey</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="https://volante-2be24.web.app/">Volante'</a></li>
-                    <button class="close-menu"><i class="fas fa-times"></i></button>
-                </ul>
-            </nav>
-            <button id="darkModeToggle" class="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div id="site-nav-mount"></div>
         </div>
     </header>
 
-    <!-- Testimonials Section -->
-    <section id="testimonials">
-        <div class="container">
-            <div class="section-title">
-                <h2>Testimonials</h2>
-                <p>What colleagues and partners say about my work</p>
+    <main id="main">
+        <section class="hero">
+            <div class="hero-inner">
+                <p class="tagline">Emmanuel Kasuba</p>
+                <h1>Testimonials</h1>
+                <p class="lead">What colleagues and partners say about building alongside me.</p>
             </div>
-            
-            <div class="grid grid-2">
-                <div class="card">
-                    <div class="testimonial-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <h3>Patrick Mulenga</h3>
-                            <p>Colleague</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>"My good friend, Emmanuel Kasuba, is a talented individual with a strong passion for cybersecurity. Together, Emmanuel and I founded our own company, where we work on creative and innovative projects."</p>
-                        <p>"One of our ideas is Rush Link, a delivery service concept designed to make ordering and receiving items faster and more convenient. We also developed Hot Talks, a website where we share and publish news content."</p>
-                        <div class="contact-info">
-                            <i class="fas fa-phone"></i> +260 765 678 591
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="testimonial-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <h3>Simeon Muyangwa</h3>
-                            <p>Business Associate</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>"Emmanuel Kasuba is a visionary co-founder of .S Technologies, driven by a passion for innovation, problem-solving, and creating impactful solutions for Africa's future."</p>
-                        <p>"With a strong foundation in business and technology, Emmanuel combines analytical thinking with creative strategy to tackle challenges in areas such as healthcare, cybersecurity, environment, and governance."</p>
-                        <div class="contact-info">
-                            <i class="fas fa-phone"></i> +260 770 884 599
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="testimonial-header">
-                        <div class="avatar">
-                            <i class="fas fa-user"></i>
-                        </div>
-                        <div>
-                            <h3>Chiyamiko Chibwana</h3>
-                            <p>Colleague</p>
-                        </div>
-                    </div>
-                    <div class="testimonial-content">
-                        <p>"It is with great honor that I recommend my close friend and co-founder, Emmanuel Kasuba, a brilliant AI and Cybersecurity Specialist and one of the finest minds I have ever had the privilege to work alongside."</p>
-                        <p>"At .S Technologies, Emmanuel has been more than a co-founder — he has been a true visionary partner. His ability to blend deep technical expertise with strategic foresight continues to set the foundation for the prestigious company we are building."</p>
-                        <div class="contact-info">
-                            <i class="fas fa-phone"></i> +260 979 470 836
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
-                EmmanuelKasuba
-            </a>
-            <p>Cybersecurity Visionary | Tech Entrepreneur | Faith-Driven Creator</p>
-            <div class="social-links">
-                <a href="https://github.com/emmanuelkasuba" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/emmanuelka71332" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/emmanuel-kasuba-706949353" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/b.ig.e_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <section class="section-full section-full--index">
+            <div class="content-index-header">
+                <p>All testimonials</p>
             </div>
-            <div class="copyright">
-                "Building platforms that empower youth through technology grounded in faith and purpose."<br>
-                &copy; 2026 Emmanuel Kasuba. All rights reserved.
-            </div>
-        </div>
-    </footer>
-    
+
+            <ol class="content-index">
+                <li class="content-entry content-entry--featured">
+                    <article>
+                        <div class="content-entry__meta">
+                            <strong>Patrick Mulenga</strong>
+                            <span>Colleague</span>
+                        </div>
+                        <div class="content-entry__content">
+                            <h2 class="content-entry__title">
+                                <a href="testimonial-patrick-mulenga.html">On cybersecurity passion and building together</a>
+                            </h2>
+                            <p class="content-entry__dek">A talented individual with a strong passion for cybersecurity — co-founding ventures including Rush Link and Hot Talks.</p>
+                            <footer class="content-entry__footer">
+                                <a href="testimonial-patrick-mulenga.html" class="text-link">Read full</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="content-entry">
+                    <article>
+                        <div class="content-entry__meta">
+                            <strong>Simeon Muyangwa</strong>
+                            <span>Business associate</span>
+                        </div>
+                        <div class="content-entry__content">
+                            <h2 class="content-entry__title">
+                                <a href="testimonial-simeon-muyangwa.html">On vision and impact across sectors</a>
+                            </h2>
+                            <p class="content-entry__dek">A visionary co-founder driven by innovation and solutions for Africa's future in healthcare, cybersecurity, and governance.</p>
+                            <footer class="content-entry__footer">
+                                <a href="testimonial-simeon-muyangwa.html" class="text-link">Read full</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+                <li class="content-entry">
+                    <article>
+                        <div class="content-entry__meta">
+                            <strong>Chiyamiko Chibwana</strong>
+                            <span>Colleague</span>
+                        </div>
+                        <div class="content-entry__content">
+                            <h2 class="content-entry__title">
+                                <a href="testimonial-chiyamiko-chibwana.html">On partnership and technical excellence</a>
+                            </h2>
+                            <p class="content-entry__dek">One of the finest minds in AI and cybersecurity — a true visionary partner building something prestigious.</p>
+                            <footer class="content-entry__footer">
+                                <a href="testimonial-chiyamiko-chibwana.html" class="text-link">Read full</a>
+                            </footer>
+                        </div>
+                    </article>
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <script src="site.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

@@ -4,150 +4,221 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emmanuel Kasuba | Cybersecurity Visionary</title>
+    <meta name="description" content="Emmanuel Kasuba — cybersecurity and web application security at ZUT. Identity, journey, ventures, and contact in one place.">
+    <meta name="theme-color" content="#c0c0c0">
+    <link rel="icon" href="favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="48x48" href="assets/favicon-48.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
+<body data-page="home">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+    <header id="site-header">
+        <div class="header-container container">
             <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
+                <img src="assets/favicon-48.png" alt="Emmanuel Kasuba" width="32" height="32">
                 EmmanuelKasuba
             </a>
-            <nav>
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul id="navMenu">
-                    <li><a href="identity.html">Identity</a></li>
-                    <li><a href="testimonials.html">Testimonials</a></li>
-                    <li><a href="journey.html">Journey</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="https://volante-2be24.web.app/">Volante'</a></li>
-                    <button class="close-menu"><i class="fas fa-times"></i></button>
-                </ul>
-            </nav>
-            <button id="darkModeToggle" class="dark-mode-toggle">
-                <i class="fas fa-moon"></i>
-            </button>
+            <div id="site-nav-mount"></div>
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-text">
-                    <div class="tagline">Tech Visionary & Faith-Driven Innovator</div>
-                    <h1>Emmanuel Kasuba</h1>
-                    <p>Building a Zambian tech empire at the intersection of cybersecurity, faith, and human empowerment. Creating solutions that heal, educate, and restore.</p>
-                    <div class="hero-btns">
-                        <a href="journey.html" class="btn">My Journey</a>
-                        <a href="contact.html" class="btn btn-outline">Get In Touch</a>
-                    </div>
-                </div>
-                <div class="hero-image">
-                    <img src="IMG_.jpg" alt="Emmanuel Kasuba">
+    <main id="main">
+        <section class="hero hero--home">
+            <div id="hero-social-mount" class="hero-social" aria-label="Social profiles"></div>
+            <div class="hero-inner">
+                <p class="tagline">Tech visionary · faith-driven innovator</p>
+                <h1>Emmanuel<br>Kasuba</h1>
+                <p class="lead">Cybersecurity student at ZUT. Co-building the <a href="https://zut-a.vercel.app" target="_blank" rel="noopener" class="text-link">ZUT A+ Club</a> — teaching AI and programming on campus.</p>
+                <div class="hero-links">
+                    <a href="#identity" class="text-link">Identity</a>
+                    <a href="#journey" class="text-link">Journey</a>
+                    <a href="my-essays.html" class="text-link">Thoughts</a>
+                    <a href="#contact" class="text-link">Contact</a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Identity Preview Section -->
-    <section id="identity-preview">
-        <div class="container">
-            <div class="section-title">
-                <h2>Core Identity</h2>
-                <p>My work is guided by faith and driven by innovation</p>
-            </div>
-            
-            <div class="grid grid-2">
-                <div class="card">
-                    <i class="fas fa-compass"></i>
-                    <h3>Spiritual Compass</h3>
-                    <p>Guided by Christian faith in all endeavors, incorporating biblical principles into technology and storytelling.</p>
-                    <a href="identity.html" class="btn btn-outline">Learn More</a>
-                </div>
-                
-                <div class="card">
-                    <i class="fas fa-laptop-code"></i>
-                    <h3>Technical Prowess</h3>
-                    <p>Cybersecurity specialist with expertise in React, AI integration, and full-stack development.</p>
-                    <a href="identity.html" class="btn btn-outline">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+        <section class="section-band">
+            <p class="statement-lead reveal">Secure tech that actually serves people.</p>
+        </section>
 
-    <!-- Testimonials Preview Section -->
-    <section id="testimonials-preview">
-        <div class="container">
-            <div class="section-title">
-                <h2>What Others Say</h2>
-                <p>Trusted by colleagues and partners</p>
+        <section id="identity" class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Identity</h2>
+                <p class="subtitle">The principles and skills that define my work and vision at ZUT and beyond</p>
             </div>
-            
-            <div class="grid grid-3">
-                <div class="card">
-                    <div class="testimonial-content">
-                        <p>"Emmanuel's skills and dedication have made a growing venture, and we are excited to keep building new things together."</p>
-                        <div class="testimonial-author">
-                            <h4>Patrick Mulenga</h4>
-                            <p>Colleague</p>
-                        </div>
-                    </div>
+            <div class="text-columns reveal">
+                <div class="text-block">
+                    <h3>Spiritual compass</h3>
+                    <p class="prose-snippet">I am guided by Christian faith in all endeavors, weaving biblical metaphors and redemptive narratives into creative work. I treat God as co-architect in technology and storytelling, and explore themes of temptation, love, and restoration.</p>
                 </div>
-                
-                <div class="card">
-                    <div class="testimonial-content">
-                        <p>"Emmanuel Kasuba is a visionary co-founder driven by a passion for innovation and creating impactful solutions for Africa's future."</p>
-                        <div class="testimonial-author">
-                            <h4>Simeon Muyangwa</h4>
-                            <p>Business Associate</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="testimonial-content">
-                        <p>"Emmanuel is a brilliant AI and Cybersecurity Specialist and one of the finest minds I have ever worked with."</p>
-                        <div class="testimonial-author">
-                            <h4>Chiyamiko Chibwana</h4>
-                            <p>Colleague</p>
-                        </div>
-                    </div>
+                <div class="text-block">
+                    <h3>Technical prowess</h3>
+                    <p class="prose-snippet">I use AI thoughtfully as a modern developer, building with React, React Native, and full-stack web. I collaborate with discipline and advocate for cyber hygiene and awareness across the communities I serve.</p>
+                    <p class="word-row">React · Cybersecurity · Web apps · Git</p>
                 </div>
             </div>
-            
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="testimonials.html" class="btn btn-outline">Read More Testimonials</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container footer-content">
-            <a href="index.html" class="logo">
-                <i class="fas fa-code"></i>
-                EmmanuelKasuba
-            </a>
-            <p>Cybersecurity Visionary | Tech Entrepreneur | Faith-Driven Creator</p>
-            <div class="social-links">
-                <a href="https://github.com/emmanuelkasuba" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://x.com/emmanuelka71332" target="_blank"><i class="fab fa-x-twitter"></i></a>
-                <a href="https://www.linkedin.com/in/emmanuel-kasuba-706949353" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/b.ig.e_/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <section class="section-band page-section">
+            <div class="section-intro reveal">
+                <h2>Expertise</h2>
             </div>
-            <div class="copyright">
-                "Building platforms that empower youth through technology grounded in faith and purpose."<br>
-                &copy; 2026 Emmanuel Kasuba. All rights reserved.
+            <div class="prose prose-stacked reveal">
+                <p class="prose-snippet">My work centers on cybersecurity and authentication systems, with a focus on web application security, OWASP practices, and secure coding.</p>
+                <p class="prose-snippet">I build with React and invest in threat hunting and defensive automation so products stay trustworthy under real-world pressure.</p>
             </div>
-        </div>
-    </footer>
-    
+        </section>
+
+        <section class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Tech stack</h2>
+                <p class="subtitle">Tools I use and explore</p>
+            </div>
+            <p class="word-row reveal">C++ · Python · SQL · JavaScript · React · React Native · Next.js · Linux · Git</p>
+        </section>
+
+        <section id="journey" class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Journey</h2>
+                <p class="subtitle">Vision for MVPs, traction, and a Zambian tech empire rooted in cybersecurity and education</p>
+            </div>
+            <div class="text-columns reveal">
+                <div class="text-block">
+                    <h3>Short-term</h3>
+                    <p class="prose-snippet">I am focused on launching project MVPs with real traction — completing pilots, securing early funding, and building a core team of talented developers who ship with care.</p>
+                </div>
+                <div class="text-block">
+                    <h3>Long-term</h3>
+                    <p class="prose-snippet">The long view is a Zambian-led tech ecosystem across Africa: innovation hubs, training thousands of young entrepreneurs, and solutions that improve healthcare, reduce poverty, and transform the continent through African-built technology.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band page-section">
+            <div class="section-intro reveal">
+                <h2>Learning</h2>
+                <p class="subtitle">Zambia University College of Technology — Semester 1, 2026</p>
+            </div>
+            <ul class="text-list text-list--courses reveal">
+                <li>
+                    <h3>Database Systems <span class="course-code">BIT 2261</span></h3>
+                    <p>Relational design, SQL, and data management — lecture series 1 through 9.</p>
+                </li>
+                <li>
+                    <h3>Biometrics 1 <span class="course-code">SEC 2201</span></h3>
+                    <p>Identity verification and biometric systems — sessions 1 through 7.</p>
+                </li>
+                <li>
+                    <h3>Cryptography <span class="course-code">SEC 2210</span></h3>
+                    <p>Foundations of secure communication — lectures 1 through 8, plus coursework.</p>
+                </li>
+                <li>
+                    <h3>Forensic Tools &amp; Techniques <span class="course-code">SEC 2230</span></h3>
+                    <p>Digital investigation methods and tooling — lectures 1 through 11.</p>
+                </li>
+            </ul>
+            <p class="section-cta reveal"><a href="https://zut-a.vercel.app" target="_blank" rel="noopener" class="text-link">ZUT A+ Club — AI &amp; programming at ZUT</a></p>
+        </section>
+
+        <section class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Milestones</h2>
+            </div>
+            <p class="prose-snippet reveal">The path runs through MVPs and pilots, toward funding and a core team that can sustain what we build.</p>
+        </section>
+
+        <section class="section-band">
+            <p class="statement-lead reveal">Faith · Security · Craft · Community</p>
+        </section>
+
+        <section class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Ventures</h2>
+                <p class="subtitle">Projects building secure, community-centered technology</p>
+            </div>
+            <ul class="text-list reveal">
+                <li>
+                    <h3><a href="https://zut-a.vercel.app" target="_blank" rel="noopener noreferrer">ZUT A+ Club</a></h3>
+                    <p>Zambia's tech student community at ZUT — AI, programming, and peer learning.</p>
+                </li>
+                <li>
+                    <h3><a href="https://smart-digital-care-13.vercel.app" target="_blank" rel="noopener noreferrer">Smart Health Digital AI</a></h3>
+                    <p>A complete digital hospital assistant — patient AI tools, clinical IMCI workflow, image diagnostics, and voice intelligence on one trusted platform.</p>
+                </li>
+                <li>
+                    <h3><a href="https://volante-2be24.web.app/" target="_blank" rel="noopener noreferrer">Volante'</a></h3>
+                    <p>Community elevation through technology and purpose.</p>
+                </li>
+            </ul>
+        </section>
+
+        <section class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>What others say</h2>
+                <p class="subtitle">Trusted by colleagues and partners</p>
+            </div>
+            <ul class="quote-list reveal">
+                <li class="quote-item">
+                    <blockquote><a href="testimonial-patrick-mulenga.html" class="quote-item__link">Emmanuel's skills and dedication have made a growing venture, and we are excited to keep building new solutions.</a></blockquote>
+                    <cite>Patrick Mulenga<span class="role">Colleague</span></cite>
+                </li>
+                <li class="quote-item">
+                    <blockquote><a href="testimonial-simeon-muyangwa.html" class="quote-item__link">A visionary co-founder driven by innovation and impactful solutions for Africa's future.</a></blockquote>
+                    <cite>Simeon Muyangwa<span class="role">Business associate</span></cite>
+                </li>
+                <li class="quote-item">
+                    <blockquote><a href="testimonial-chiyamiko-chibwana.html" class="quote-item__link">A brilliant AI and Cybersecurity Specialist — one of the finest minds I have worked with.</a></blockquote>
+                    <cite>Chiyamiko Chibwana<span class="role">Colleague</span></cite>
+                </li>
+            </ul>
+            <p class="section-cta reveal"><a href="testimonials.html" class="text-link">All testimonials</a></p>
+        </section>
+
+        <section id="contact" class="section-full page-section">
+            <div class="section-intro reveal">
+                <h2>Contact</h2>
+                <p class="subtitle">Collaborations in secure AI, React web apps, and web application security</p>
+            </div>
+            <div class="text-columns reveal">
+                <div class="contact-lines">
+                    <h3>Email</h3>
+                    <p><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">emmanuelkasuba2005@gmail.com</a></p>
+                    <h3>Phone</h3>
+                    <p>+260 972 354 969</p>
+                    <p>+260 764 614 356</p>
+                    <h3>Location</h3>
+                    <p>Zambia University College of Technology</p>
+                </div>
+                <div class="contact-lines">
+                    <h3>Reach out</h3>
+                    <p><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">Send email</a></p>
+                    <p><a href="https://mail.google.com/mail/?view=cm&fs=1&to=emmanuelkasuba2005@gmail.com" target="_blank" rel="noopener" class="text-link">Open in Gmail</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section-band page-section">
+            <div class="section-intro section-intro--center reveal">
+                <h2>Collaboration</h2>
+                <p class="subtitle">Open to secure AI, React apps, and web security work</p>
+            </div>
+            <p class="section-cta reveal"><a href="mailto:emmanuelkasuba2005@gmail.com" class="text-link">Email me</a></p>
+        </section>
+    </main>
+
+    <footer id="site-footer" class="site-footer"></footer>
+    <script src="site.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
